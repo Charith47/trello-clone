@@ -1,13 +1,3 @@
 <template>
-  <h1 class="text-xl font-bold">Hello from templates</h1>
+  <h1 class="text-3xl mb-5">Templates</h1>
 </template>
-
-<script>
-export default {
-  name: "index"
-}
-</script>
-
-<style scoped>
-
-</style>
