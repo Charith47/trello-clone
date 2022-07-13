@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import {createRouter, createWebHistory} from 'vue-router';
 
 import boards from '@/pages/boards.vue';
 import settings from '@/pages/settings.vue';
@@ -23,8 +23,8 @@ const routes = [
 ];
 
 const router = createRouter({
-	history: createWebHistory(import.meta.env.BASE_URL),
-	routes,
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes,
 });
 
 export default router;
