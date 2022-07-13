@@ -1,32 +1,17 @@
 <template>
   <TheNavbar/>
-  <Drawer
-      :expanded="expanded"
-      :items="
-			items.map((item, index) => ({
-				...item,
-				selected: index === selectedId,
-			}))
-		"
-      :mini="true"
-      :mode="mode"
-      :position="position"
-      @select="onLinkClick"
-  >
-    <DrawerContent class="m-8">
-      <RouterView/>
-    </DrawerContent>
-  </Drawer>
+  <TheDrawer/>
 </template>
 
 <script>
 import {Drawer, DrawerContent} from '@progress/kendo-vue-layout';
 import {Button} from '@progress/kendo-vue-buttons';
 import TheNavbar from "@/components/TheNavbar.vue";
+import TheDrawer from "@/components/TheDrawer.vue";
 
 export default {
   name: 'App',
-  components: {TheNavbar, Drawer, DrawerContent, kbutton: Button},
+  components: {TheDrawer, TheNavbar, Drawer, DrawerContent, kbutton: Button},
   mounted() {
     this.$router.push(this.items[0].data);
   },
