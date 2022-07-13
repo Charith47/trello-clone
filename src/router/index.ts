@@ -1,8 +1,8 @@
 import {createRouter, createWebHistory} from 'vue-router';
 
-import boards from '@/pages/boards.vue';
-import settings from '@/pages/settings.vue';
-import templates from '@/pages/templates.vue';
+import boards from '@/pages/boards/index.vue';
+import settings from '@/pages/settings/index.vue';
+import templates from '@/pages/templates/index.vue';
 
 const routes = [
 	{
