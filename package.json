@@ -2,7 +2,7 @@
   "name": "vue-forge-boilerplate",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite --host",
+    "dev": "vite",
     "build": "run-p type-check build-only",
     "preview": "vite preview --port 4173",
     "test:unit": "vitest --environment jsdom",
@@ -13,10 +13,11 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "@progress/kendo-vue-intl": "^3.4.3",
-    "@progress/kendo-vue-progressbars": "^3.4.3",
+    "@vue/apollo-composable": "^4.0.0-alpha.18",
     "@vueuse/core": "^8.9.2",
+    "graphql-tag": "^2.12.6",
     "lodash-es": "^4.17.21",
+    "pinia": "^2.0.16",
     "unplugin-vue-components": "^0.20.1",
     "uuid": "^8.3.2",
     "vite-plugin-pages": "^0.24.3",
@@ -40,6 +41,7 @@
     "@types/jsdom": "^16.2.14",
     "@types/lodash-es": "^4.17.6",
     "@types/node": "^16.11.41",
+    "@types/uuid": "^8.3.4",
     "@vitejs/plugin-vue": "^2.3.3",
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/eslint-config-typescript": "^11.0.0",
