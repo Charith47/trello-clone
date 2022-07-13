@@ -1,5 +1,19 @@
 <template>
-
+  <Drawer
+      :expanded="expanded"
+      :items="items"
+      :mini="true"
+      class="h-[90vh]"
+      mode="push"
+      position="start"
+      @select="onSelect"
+  >
+    <DrawerContent>
+      <div class="px-5">
+        <router-view/>
+      </div>
+    </DrawerContent>
+  </Drawer>
 </template>
 
 <script>
