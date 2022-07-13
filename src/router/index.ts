@@ -1,13 +1,24 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
-// this works with the vite plugin to support file based routing
 import boards from '@/pages/boards.vue';
+import settings from '@/pages/settings.vue';
+import templates from '@/pages/templates.vue';
 
 const routes = [
 	{
 		path: '/boards',
 		name: 'Boards',
 		component: boards,
+	},
+	{
+		path: '/templates',
+		name: 'Templates',
+		component: templates,
+	},
+	{
+		path: '/settings',
+		name: 'Settings',
+		component: settings,
 	},
 ];
 

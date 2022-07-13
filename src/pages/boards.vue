@@ -1,5 +1,5 @@
 <template>
-	<h1 class="text-xl font-bold">Boards</h1>
+	<h1 class="text-xl font-bold mb-4">Boards</h1>
 	<div class="flex flex-row">
 		<Board
 			class="mr-2"
